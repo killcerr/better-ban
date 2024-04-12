@@ -43,6 +43,8 @@ bool BetterBan::enable() {
     // Code for enabling the plugin goes here.
     loadBannedPlayers();
     initBanCommand();
+    initEventListeners();
+    initServices();
 
 
     return true;
