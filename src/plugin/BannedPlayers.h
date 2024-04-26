@@ -5,12 +5,15 @@
 
 namespace banned_players {
 struct BannedPlayerInfo {
-    enum class Type { Xuid, IP, Name } type;
+    enum class Type { Xuid, Ip, Name } type;
     std::string value;
+    std::string reason;
 };
 struct BannedPlayers {
     int                           version = 1;
     std::vector<BannedPlayerInfo> banned_players;
 };
-static inline BannedPlayers bannedPlayers;
+#ifdef BETTER_BAN_EXPORT
+static inline BannedPlayers bannedPlayers{};
+#endif
 } // namespace banned_players

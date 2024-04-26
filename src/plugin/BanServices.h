@@ -4,8 +4,10 @@
 #include "ll/api/service/ServiceManager.h"
 
 namespace ban_services {
-class GetBannedPlayersService : public ll::service::ServiceImpl<GetBannedPlayersService, 0> {
-    virtual void                                   invalidate();
-    std::vector<banned_players::BannedPlayerInfo>& getBannedPlayers();
+class BannedPlayersService : public ll::service::ServiceImpl<BannedPlayersService, 0> {
+    virtual void                                  invalidate();
+    std::vector<banned_players::BannedPlayerInfo> getBannedPlayers();
+    void BanPlayer(banned_players::BannedPlayerInfo::Type type, std::string value, std::string reason = "");
+    void UnbanPlayer(banned_players::BannedPlayerInfo::Type type, std::string value);
 };
 } // namespace ban_services
