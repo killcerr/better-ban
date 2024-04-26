@@ -240,7 +240,7 @@ void BetterBan::initEventListeners() {
                     ll::service::getServerNetworkHandler()->disconnectClient(
                         ev.self().getNetworkIdentifier(),
                         Connection::DisconnectFailReason::Kicked,
-                        i.reason == "" ? "you have been banned." : " you have been banned.\nreason: " + i.reason,
+                        i.reason == "" ? "you have been banned." : "you have been banned.\nreason: " + i.reason,
                         false
                     );
                     return;
@@ -256,7 +256,7 @@ void BetterBan::initEventListeners() {
                     ll::service::getServerNetworkHandler()->disconnectClient(
                         ev.self().getNetworkIdentifier(),
                         Connection::DisconnectFailReason::Kicked,
-                        i.reason == "" ? "you have been banned." : " you have been banned.\nreason: " + i.reason,
+                        i.reason == "" ? "you have been banned." : "you have been banned.\nreason: " + i.reason,
                         false
                     );
                     return;
@@ -272,7 +272,7 @@ void BetterBan::initEventListeners() {
                     ll::service::getServerNetworkHandler()->disconnectClient(
                         ev.self().getNetworkIdentifier(),
                         Connection::DisconnectFailReason::Kicked,
-                        i.reason == "" ? "you have been banned." : " you have been banned.\nreason: " + i.reason,
+                        i.reason == "" ? "you have been banned." : "you have been banned.\nreason: " + i.reason,
                         false
                     );
                     return;
