@@ -15,7 +15,7 @@
     },
     "asset_url": "https://github.com/killcerr/better-ban/releases/download/v0.0.1/better-ban-windows-x64.zip",
     "prerequisites": {
-        "github.com/LiteLDev/LeviLamina": "0.11.0"
+        "github.com/LiteLDev/LeviLamina": ">=0.11.0"
     },
     "files": {
         "place": [
